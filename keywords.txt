@@ -1,0 +1,32 @@
+#######################################
+# Syntax Coloring Map For SoftWire_CH32
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+SoftWire_CH32	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+end	KEYWORD2
+setClock	KEYWORD2
+beginTransmission	KEYWORD2
+endTransmission	KEYWORD2
+requestFrom	KEYWORD2
+write	KEYWORD2
+available	KEYWORD2
+read	KEYWORD2
+peek	KEYWORD2
+flush	KEYWORD2
+exists	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+SOFTWIRE_CH32_BUFFER_LENGTH	LITERAL1

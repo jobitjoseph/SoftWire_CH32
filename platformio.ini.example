@@ -1,0 +1,43 @@
+; PlatformIO Project Configuration File for SoftWire_CH32
+;
+; Copy this to your project root as "platformio.ini"
+; and adjust the settings for your board
+
+[env:ch32x035]
+platform = ch32v
+board = ch32x035f7p6  ; Change to your board variant
+framework = arduino
+
+; Build flags (optional)
+build_flags =
+    -D SOFTWIRE_CH32_BUFFER_LENGTH=32  ; Adjust buffer size if needed
+
+; Upload settings
+upload_protocol = wch-link
+upload_speed = 115200
+
+; Monitor settings
+monitor_speed = 115200
+
+; Library dependencies
+lib_deps =
+    SoftWire_CH32
+
+; Example: Using local library (if cloned in lib folder)
+; lib_deps =
+;     file://lib/SoftWire_CH32
+
+; Example: Using from git repository
+; lib_deps =
+;     https://github.com/yourusername/SoftWire_CH32.git
+
+; Debug configuration
+debug_tool = wch-link
+debug_init_break = tbreak setup
+
+; Additional options
+; Uncomment if you need more verbose output
+; build_flags =
+;     ${env.build_flags}
+;     -DDEBUG_SERIAL=Serial
+;     -DCORE_DEBUG_LEVEL=5
