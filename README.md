@@ -341,6 +341,7 @@ SoftWire_CH32/
 ├── library.properties           # Arduino library metadata
 ├── keywords.txt                 # Syntax highlighting definitions
 ├── README.md                    # Complete documentation
+├── CHANGELOG.md                # Version history
 ├── LICENSE                     # MIT License
 └── platformio.ini.example      # PlatformIO configuration example
 ```
