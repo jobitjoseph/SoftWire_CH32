@@ -20,7 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Complete documentation (README.md, QUICK_START.md)
 - Arduino IDE and PlatformIO compatibility
 - Keywords.txt for syntax highlighting
-- LGPL 2.1 license
+- MIT license
 
 ### Features
 - Master mode I2C communication
