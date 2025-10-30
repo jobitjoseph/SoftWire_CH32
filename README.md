@@ -32,7 +32,10 @@ SoftWire_CH32 allows you to use any GPIO pins for I2C communication on CH32 micr
 
 ## Installation
 
-### Arduino IDE
+### Via Arduino Library Manager
+1. Search and install the SoftWire_CH32 library.
+
+### Arduino IDE Manual Installation
 
 1. Download this repository as a ZIP file
 2. In Arduino IDE: `Sketch` → `Include Library` → `Add .ZIP Library...`
@@ -323,9 +326,43 @@ See the `examples/` folder for complete examples:
 - No DMA support
 - Higher CPU usage than hardware I2C
 
+## 📦 Library Package Contents
+
+```
+SoftWire_CH32/
+├── src/
+│   ├── SoftWire_CH32.h          # Header file with class declaration
+│   └── SoftWire_CH32.cpp        # Implementation file
+├── examples/
+│   ├── I2C_Scanner/             # Example: Scan for I2C devices
+│   │   └── I2C_Scanner.ino
+│   └── I2C_ReadWrite/           # Example: Read/write to I2C device
+│       └── I2C_ReadWrite.ino
+├── library.properties           # Arduino library metadata
+├── keywords.txt                 # Syntax highlighting definitions
+├── README.md                    # Complete documentation
+├── LICENSE                     # MIT License
+└── platformio.ini.example      # PlatformIO configuration example
+```
+
+## 🎯 Why Use SoftWire_CH32?
+
+### Problem It Solves
+On CH32X035G8U6 QFN28 package:
+- Hardware I2C default pins (PC16/PC17) conflict with USB
+- Some I2C remap pins (PC1, PC2, PC5, PC6) don't exist on QFN28
+- Need I2C communication while using USB CDC
+
+### Solution
+Software I2C (bit-banging) on any available GPIO pins:
+- ✅ No hardware conflicts
+- ✅ Use any pins (PB6/PB7 recommended)
+- ✅ Compatible with USB CDC
+- ✅ Easy to implement
+
 ## License
 
-This library is released under the GNU Lesser General Public License v2.1.
+This library is released under the MIT License.
 
 ## Contributing
 
