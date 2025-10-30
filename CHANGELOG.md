@@ -33,7 +33,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Tested On
 - CH32X035G8U6 (QFN28 package)
 - Pins: PB6 (SDA), PB7 (SCL)
-- Device: 24C32 EEPROM at 0x57
+- Device: 24C32 EEPROM
+          MAXREFDES117 Heart-Rate and Pulse-Oximetry Monitor
+          LIS3DHTR 3-axis MEMS accelerometer 
 
 ### Known Limitations
 - Master mode only (no slave support)
